@@ -4,11 +4,19 @@
     padding: 0;
     font-family: "Monaco", monospace;
     scroll-behaviour: smooth;
-    
+    --bg-color: black;
     --typewriterSpeed: 2s;
     --typewriterCharacters: 24;
   }
+
+
   
+body{
+  height: 100%;
+  margin: 0;
+  
+}
+
   html {
   scroll-behavior: smooth;
   }
@@ -52,7 +60,7 @@
   }
   
   #navbar__logo:hover {
-    color: #7DF9FF;
+    color: #1349D1;
   }
   
   .navbar__menu{
@@ -71,7 +79,7 @@
   text-decoration: none;
   letter-spacing: 0.15rem;
   display: inline-block;
-  padding: 3vh 2vh;
+  padding: 2rem;
   position: relative;
   }
   
@@ -157,14 +165,14 @@
   
   .navbar__links {
     text-align: center;
-    padding: 10vh;
+    
     width: 100%;
     display: table;
     color: #7DF9FF ;
   }
   
   .navbar__btn {
-    padding-bottom: 4vh;
+    
   }
   
   .button {
@@ -203,6 +211,16 @@
   }
   
   .intro {
+    margin: 0 auto;
+    max-width: 100vw;
+    
+    height: 90%;
+    
+    text-align: center;
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
     
   }
 
@@ -213,33 +231,36 @@
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
   
-.textheader{
-    position: relative;
-    height: 50vh;
-    text-align: center;
+.viewport-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+  
+  .viewport-header h1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-  
-  h1 {
-    font-size: clamp(1.5vh, 3vw + 1.5vh, 4vh);
-    position: relative;
+    font-size: clamp(4rem, 4rem + 6rem, 6rem);
+    position: absolute;
     font-family: "Monaco", monospace;
-    position: relative;
     width: max-content;
-    color: #7DF9FF;
+    color: white;
     
   }
-  
-  h2 {
-    color: #849DA0 ;
-    font-size: 1.5vh;
+
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: clamp(1rem, 1rem + 2rem, 2.2rem);
   }
+}
   
+
   h1::before,
   h1::after {
     content: "";
@@ -283,3 +304,37 @@
       transform: translateY(0);
     }
   }
+
+  h2{
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 9rem;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2{
+      padding-top: 3.8rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .about {
+    
+    background:black;
+    opacity: 0.95;
+    height: 100vh;
+    color: white;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    }
+
+  h3{
+    padding-top: 3rem;
+    font-size: 3.5rem;
+  }
+
+
+  
+
