@@ -238,10 +238,12 @@ body{
   position: relative;
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
   
   .viewport-header h1 {
@@ -279,7 +281,7 @@ body{
   
   h1::after {
     width: 0.125em;
-    background: black;
+    background: white;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 1s steps(var(--typewriterCharacters)) infinite;
@@ -330,11 +332,9 @@ body{
     text-align: center;
     }
 
-  h3{
-    padding-top: 3rem;
-    font-size: 3.5rem;
-  }
+  
 
+ 
 
   
 
