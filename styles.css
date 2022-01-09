@@ -266,7 +266,7 @@ h1 {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 48vw;}
+  to{width: 36vw;}
 }
 
 @media screen and (max-width: 768px) {
@@ -382,8 +382,8 @@ h1 {
       .contain{
         padding-top: 2rem;
 
-        max-width: 75vw;
-        text-align: left;
+        max-width: 65vw;
+        
         opacity: 0.92;
         
       }
@@ -709,6 +709,7 @@ h1 {
 
           
           
+          
           .fa-facebook {
           margin-top: 1rem;
           background: #3B5998;
@@ -767,4 +768,45 @@ h1 {
               
             }
 
+            .grid{
+              align-items: right;
+            }
+
+            .grid-container {
+              margin-left: auto;
+              margin-right: 2.5rem;
+              margin-top: 5rem;
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: #2196F3;
+              width: 77vw;
+              height: 77vh;
+
+              grid-auto-columns:1fr;
+              grid-auto-rows:1fr;
+              overflow:hidden;
+            }
+            .grid-item {
+              
+              background-color :#040f13;
+              outline:1px solid #779ECB;
+              padding: 20px;
+              font-size: 30px;
+              text-align: center;
+             
+            }
+
+            .grid h5{
+              font-size: 1.5rem;
+              color: white;
+              margin: auto;
+            }
+
+
+            section.is-inview .grid-container{
+          
+              animation: slide-in-right 1s;
+              
+              
+            }
 
