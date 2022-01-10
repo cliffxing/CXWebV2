@@ -266,7 +266,7 @@ h1 {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 36vw;}
+  to{width: 50rem;}
 }
 
 @media screen and (max-width: 768px) {
@@ -384,7 +384,7 @@ h1 {
 
         max-width: 65vw;
         
-        opacity: 0.92;
+        
         
       }
 
@@ -797,7 +797,7 @@ h1 {
             }
 
             .grid h5{
-              font-size: 1.5rem;
+              font-size: 1.3rem;
               color: white;
               margin: auto;
             }
@@ -810,3 +810,18 @@ h1 {
               
             }
 
+
+            .gridphoto{
+              height: 7rem;
+              width: 7rem;
+            }
+
+            .gridphoto2{
+              height: 7rem;
+              width: 10rem;
+            }
+
+            .grid span{
+              color: #779ECB;
+              font-size: 1.1rem;
+            }
