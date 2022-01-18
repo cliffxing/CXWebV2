@@ -229,6 +229,13 @@ body{
     left: 0;
     overflow: hidden;
 }
+
+@media screen and (max-width: 960px) {
+  .video-bg {
+    height: 150vh;
+  }
+  
+}
   
 .viewport-header {
   position: relative;
@@ -250,7 +257,7 @@ h1 {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   h1{
     font-size: 2rem;
   }
@@ -270,10 +277,13 @@ h1 {
   to{width: 50rem;}
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 960px) {
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 15rem;}
+    to{width: 16rem;}
   }
   
 }
@@ -302,7 +312,7 @@ h1 {
     position: absolute;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     h2{
       padding-top: 3.8rem;
       font-size: 0.8rem;
@@ -311,7 +321,7 @@ h1 {
 
   .about {
     background:#040f13;
-    opacity: 0.95;
+    opacity: 1;
     height: 260vh;
     width: 100vw;
     position: sticky;
@@ -319,10 +329,29 @@ h1 {
     
     }
 
+    @media screen and (max-width: 960px) {
+      .about {
+      height: 800vh;
+      align-items: center;
+      margin: auto;
+      }
+      
+    }
+
+
     .abouttitle{
       margin-left: 10rem;
       text-align: left;
        }
+
+       @media screen and (max-width: 960px) {
+        .abouttitle{
+          text-align: left;
+          margin-left: 2rem;
+
+        }
+        
+      }
 
     .abouttitle h4{
      padding-top: 4rem; 
@@ -352,14 +381,22 @@ h1 {
       }
 
       
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 960px) {
         .about h4{
           padding-top: 2rem; 
-          font-size: 1.5rem;
+          font-size: 1.6rem;
+          margin: auto;
+          
         }
         
       }
 
+      @media screen and (max-width: 960px) {
+        .box {
+          display: none;
+        }
+        
+      }
 
   
       @keyframes shine {
@@ -374,12 +411,14 @@ h1 {
       section.is-inview h4{
         visibility: visible;
         animation: fade-in 4s;
+        
 
       }
 
       section.is-inview .box{
         visibility: visible;
         animation: fade-in 2s;
+        
       }
 
       .contain{
@@ -391,16 +430,31 @@ h1 {
         
       }
 
+      @media screen and (max-width: 960px) {
+        .contain {
+          align-items: center;
+          text-align: center;
+          margin: auto;
+        }
+        
+      }
+
+
+      
+
       section.is-inview .para{
         visibility: visible;
         animation: slide-in-right 1.5s;
+        
       }
+
 
      
 
       section.is-inview img{
         visibility: visible;
         animation: slide-in-left 1.5s;
+        
       }
 
       @keyframes slide-in-right {
@@ -457,6 +511,28 @@ h1 {
         
       }
 
+      @media screen and (max-width: 960px) {
+        .photocontain {
+          margin: auto;
+        }
+        
+      }
+
+
+      @media screen and (max-width: 960px) {
+        .photo{
+          height: 13rem;
+          width: 13rem;
+          margin: auto;
+          float:unset;
+
+          margin-right: 0;
+          margin-left: 0;
+          margin-top: 0;
+        }
+        
+      }
+
       .photo:hover{
         border: 6px solid #779ECB;
         transition: 0.2s ease;
@@ -474,6 +550,17 @@ h1 {
           letter-spacing: 0.2rem;
           padding-top: 9rem;
           
+      }
+
+
+
+      @media screen and (max-width: 960px) {
+        .para{
+          margin: auto;
+          font-size: 0.8rem;
+          padding-top: 3rem;
+        }
+        
       }
       
       .pp {
@@ -566,12 +653,12 @@ h1 {
 
           .abouttitle2{
             padding-right: 10rem;
-            text-align: right;
+            text-align:  right;
 
              }
       
           .abouttitle2 h4{
-          visibility: hidden;
+          
            padding-top: 4rem; 
            padding-bottom: 1.3rem;
            font-size: 4rem;
@@ -588,6 +675,32 @@ h1 {
            letter-spacing: 0.6rem;
            position: relative;
             }
+
+            @media screen and (max-width: 960px) {
+              .abouttitle2 {
+                text-align: center;
+                align-items: center;
+                margin: auto;
+                display:flex;
+                
+                margin-left: 0rem;
+                margin-right: 0rem;
+              }
+              
+            }
+
+            @media screen and (max-width: 960px) {
+              .abouttitle2 h4 {
+                font-size: 1.6rem;
+                margin: auto;
+                display: flex;
+                padding-bottom: 0rem;
+                
+
+              }
+              
+            }
+      
       
             .box2{
               
@@ -600,8 +713,25 @@ h1 {
               
             }
 
+            @media screen and (max-width: 960px) {
+              .box2 {
+                display: none;
+
+              }
+              
+            }
+
             .grid{
               align-items: right;
+            }
+
+            @media screen and (max-width: 960px) {
+              .grid {
+                align-items: left;
+                
+
+              }
+              
             }
 
             .grid-container {
@@ -618,7 +748,27 @@ h1 {
               grid-auto-columns:1fr;
               grid-auto-rows:1fr;
               overflow:hidden;
+
             }
+
+            @media screen and (max-width: 960px) {
+              .grid-container {
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 0;
+                grid-template-columns: none;
+                width: 95vw;
+                height: 200vh;
+                display: block;
+                background-color: #040f13;
+
+                grid-auto-columns:none;
+                grid-auto-rows:none;
+
+              }
+              
+            }
+
             .grid-item {
               
               background-color :#040f13;
@@ -627,6 +777,18 @@ h1 {
               font-size: 30px;
               text-align: center;
              
+            }
+
+            @media screen and (max-width: 960px) {
+              .grid-item {
+                font-size: 0.3rem;
+                padding: 0px;
+                width: 85vw;
+                outline:1px solid #040f13;
+                padding-top: 5rem;
+                
+              }
+              
             }
 
             .grid h5{
@@ -649,6 +811,16 @@ h1 {
               width: 7rem;
             }
 
+            @media screen and (max-width: 960px) {
+              .gridphoto {
+                height: 4rem;
+                width: 4rem;
+
+              }
+              
+            }
+            
+
             .gridphoto2{
               height: 7rem;
               width: 10rem;
@@ -669,4 +841,98 @@ h1 {
               font-size: 1rem;
               color: #E1D9D1;
               margin: auto;
+            }
+
+            @media screen and (max-width: 960px) {
+              .skilltext {
+                font-size: 0.8rem;
+                width: 90vw;
+                text-align: left;
+              }
+              
+            }
+            
+
+            .abouttitle3 h4{
+              padding-top: 8rem; 
+              padding-left: 3rem;
+              padding-bottom: 1.3rem;
+              font-size: 4rem;
+              text-decoration: underline;
+              font-weight: 700;
+              text-transform: uppercase;
+              background: #E1D9D1;
+              letter-spacing: 5px;
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-repeat: no-repeat;
+              background-size: 80%;
+              letter-spacing: 0.6rem;
+              position: relative;
+               }
+
+            .para2 { 
+              padding-top: 3rem;
+              color: #E1D9D1;   
+              font-size: 1.2rem;
+              font-weight: 700;
+              line-height: 1.3;
+              letter-spacing: 0.2rem;
+            }
+
+            
+            .gifs{
+              width: 30rem;
+              height: 18rem;
+              border-radius: 0.9rem;
+              padding-right: 5rem;
+              float: right;
+            }
+
+            .pointcontain{
+              
+            }
+
+            .hobbies{
+              display: inline-block;
+            }
+
+
+            .hobbies li{
+              padding-top: 4rem;
+              color: #E1D9D1;   
+              font-size: 1.1rem;
+              margin-left: 5rem;
+             
+
+            }
+
+            .hobbies a{
+              color: #779ECB;
+            }
+
+            .abouttitle3 section{
+              padding-left: 6rem;
+            }
+
+            section.is-inview .aboutittle3{
+              visibility: visible;
+              animation: slide-in-right 1s;
+              
+              
+            }
+
+            section.is-inview .hobbies li{
+              visibility: visible;
+              animation: slide-in-right 1s;
+              
+              
+            }
+
+            section.is-inview .para2{
+              visibility: visible;
+              animation: slide-in-right 1s;
+              
+              
             }
