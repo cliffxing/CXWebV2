@@ -1,3 +1,5 @@
+
+/*hi*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -273,32 +275,19 @@ animation: animated-text 3s steps(29) 1s 1 normal both,
 /* text animation */
 
 @keyframes animated-text{
-<<<<<<< HEAD
-  from{width: 0;}
-  to{width: 44rem;}
-=======
 from{width: 0;}
-to{width: 50rem;}
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
+to{width: 44rem;}
 }
 
 
 
 
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 13rem;}
-  }
-  
-=======
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 16rem;}
+  to{width: 13rem;}
 }
 
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
 }
 
 @media not all and (min-resolution:.001dpcm) { 
@@ -335,7 +324,7 @@ h2{
 .about {
   background:#040f13;
   opacity: 1;
-  height: 260vh;
+  height: 240vh;
   width: 100vw;
   position: relative;
   padding: 1rem;
@@ -351,22 +340,12 @@ h2{
     
   }
 
-<<<<<<< HEAD
-  .about {
-    background:#040f13;
-    opacity: 1;
-    height: 240vh;
-    width: 100vw;
-    position: relative;
-    padding: 1rem;
-    
-    }
-=======
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
 
   .abouttitle{
-    margin-left: 10rem;
-    text-align: left;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    text-align: center;
      }
 
      @media screen and (max-width: 768px) {
@@ -379,7 +358,9 @@ h2{
     }
 
   .abouttitle h4{
-   padding-top: 4rem; 
+  
+   margin-top: 7rem;
+   padding-top: 1rem; 
    padding-bottom: 1.3rem;
    font-size: 4rem;
    text-decoration: underline;
@@ -396,28 +377,14 @@ h2{
    position: relative;
     }
 
-<<<<<<< HEAD
-    .abouttitle{
-      margin: auto;
-      position: relative;
-      align-items: center;
-      text-align: center;
-       }
-
-       @media screen and (max-width: 768px) {
-        .abouttitle{
-          text-align: left;
-          margin-left: 2rem;
-=======
     .box{
-      margin-left: 5rem;
+      margin: auto;
       height: 0.3rem;
       width: 13rem;
       background-color: #779ECB;
-      text-align: left;
+      text-align: center;
       
     }
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
 
     
     @media screen and (max-width: 768px) {
@@ -430,43 +397,13 @@ h2{
       
     }
 
-<<<<<<< HEAD
-    .abouttitle h4{
-    
-     margin-top: 7rem;
-     padding-top: 1rem; 
-     padding-bottom: 1.3rem;
-     font-size: 4rem;
-     text-decoration: underline;
-     font-weight: 700;
-     text-transform: uppercase;
-     background: #E1D9D1;
-     letter-spacing: 5px;
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-     background-repeat: no-repeat;
-     background-size: 80%;
-     letter-spacing: 0.6rem;
-     position: relative;
-=======
     @media screen and (max-width: 768px) {
       .box {
         display: none;
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
       }
       
     }
 
-<<<<<<< HEAD
-      .box{
-        margin: auto;
-        height: 0.3rem;
-        width: 13rem;
-        background-color: #779ECB;
-        text-align: center;
-        
-=======
 
     @keyframes shine {
       0% {
@@ -474,7 +411,6 @@ h2{
       }
       100% {
         background-position-x: 500%;
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
       }
     }
 
@@ -492,8 +428,10 @@ h2{
     }
 
     .contain{
-      padding-top: 2rem;
-
+      padding-top: 4rem;
+      align-items: center;
+      text-align: center;
+      margin: auto;
       max-width: 70vw;
       
       
@@ -509,14 +447,6 @@ h2{
       
     }
 
-<<<<<<< HEAD
-      .contain{
-        padding-top: 4rem;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        max-width: 70vw;
-=======
 
     
 
@@ -551,7 +481,6 @@ h2{
     @keyframes slide-in-left {
       
       0% {
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
         
         -webkit-transform: translateX(-100px);
         transform: translateX(-100px);
@@ -577,16 +506,13 @@ h2{
     }
 
     .photo{
-      
+      margin: auto;
       visibility: hidden;
       opacity: 0.9;
       height: 16rem;
       width: 16rem;
       transition: 0.2s ease;
-      float: left;
-      margin-right: 3rem;
-      margin-left: 3rem;
-      margin-top: 3rem;
+      
       
     }
 
@@ -621,14 +547,21 @@ h2{
     
     
     .para { 
-      visibility: hidden;
+        visibility: hidden;
         color: #E1D9D1;
         font-size: 1.2rem;
         font-weight: 700;
         line-height: 1.3;
         letter-spacing: 0.2rem;
-        padding-top: 9rem;
+        padding-top: 4rem;
+        width: 64rem;
+        margin: auto;
         
+    }
+
+    a{
+      color: #779ECB;
+
     }
 
 
@@ -640,28 +573,6 @@ h2{
         padding-top: 3rem;
       }
       
-<<<<<<< HEAD
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-          
-        }
-        100% {
-          opacity: 1;
-          
-        }
-      }
-
-      .photo{
-        margin: auto;
-        visibility: hidden;
-        opacity: 0.9;
-        height: 16rem;
-        width: 16rem;
-        transition: 0.2s ease;
-        
-        
-=======
     }
     
     .pp {
@@ -674,7 +585,6 @@ h2{
       padding-left: 12rem;
       font-size: 1.2rem;
       
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
       }
 
      
@@ -689,39 +599,9 @@ h2{
         from {
           font-size: 0.1rem;
         }
-<<<<<<< HEAD
-        
-      }
-
-      .photo:hover{
-        border: 6px solid #779ECB;
-        transition: 0.2s ease;
-        border-radius: 21rem;
-      }
-
-      
-      
-      .para { 
-          visibility: hidden;
-          color: #E1D9D1;
-          font-size: 1.2rem;
-          font-weight: 700;
-          line-height: 1.3;
-          letter-spacing: 0.2rem;
-          padding-top: 4rem;
-          width: 64rem;
-          margin: auto;
-          
-=======
         to {
           font-size: 1.2rem;
         }
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
-      }
-
-      a{
-        color: #779ECB;
-
       }
 
 
@@ -745,9 +625,9 @@ h2{
         }
 
         .buttoncontain{
-          padding-left: 5rem;
-          padding-top: 6rem;
-          align-items: left;
+          margin: auto;
+          padding-top: 1.5rem;
+          align-items: center;
         }
         
 
@@ -756,13 +636,6 @@ h2{
           display: inline;
         }
 
-<<<<<<< HEAD
-          .buttoncontain{
-            margin: auto;
-            padding-top: 1.5rem;
-            align-items: center;
-          }
-=======
         
         
         
@@ -773,7 +646,6 @@ h2{
         }
         
         .fa-instagram {
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
           
         background: #bc2a8d;
         color: white;
@@ -794,6 +666,7 @@ h2{
         .abouttitle2{
           padding-right: 10rem;
           text-align:  right;
+          margin-top: 17rem;
 
            }
     
@@ -829,51 +702,12 @@ h2{
             
           }
 
-<<<<<<< HEAD
-          .abouttitle2{
-            padding-right: 10rem;
-            text-align:  right;
-            margin-top: 17rem;
-
-             }
-      
-          .abouttitle2 h4{
-          
-           padding-top: 4rem; 
-           padding-bottom: 1.3rem;
-           font-size: 4rem;
-           text-decoration: underline;
-           font-weight: 700;
-           text-transform: uppercase;
-           background: #E1D9D1;
-           letter-spacing: 5px;
-           -webkit-background-clip: text;
-           background-clip: text;
-           -webkit-text-fill-color: transparent;
-           background-repeat: no-repeat;
-           background-size: 80%;
-           letter-spacing: 0.6rem;
-           position: relative;
-            }
-
-            @media screen and (max-width: 768px) {
-              .abouttitle2 {
-                text-align: center;
-                align-items: center;
-                margin: auto;
-                display:flex;
-                
-                margin-left: 0rem;
-                margin-right: 0rem;
-              }
-=======
           @media screen and (max-width: 768px) {
             .abouttitle2 h4 {
               font-size: 1.6rem;
               margin: auto;
               display: flex;
               padding-bottom: 0rem;
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
               
 
             }
@@ -1089,19 +923,11 @@ h2{
           @media screen and (max-width: 768px) {
             .gifs {
               padding-top: 4rem;
-<<<<<<< HEAD
-              color: #E1D9D1;   
-              font-size: 1.1rem;
-              margin-left: 5rem;
-              text-align: left;
-              font-family: "Monaco", monospace;
-=======
               padding-right: 0rem;
               margin: auto;
               float: unset;
               width: 17rem;
               height: 15rem;
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
             }
             
           }
@@ -1126,7 +952,8 @@ h2{
             color: #E1D9D1;   
             font-size: 1.1rem;
             margin-left: 5rem;
-
+            text-align: left;
+            font-family: "Monaco", monospace;
           }
 
           @media screen and (max-width: 768px) {
@@ -1145,20 +972,9 @@ h2{
             padding-left: 6rem;
           }
 
-<<<<<<< HEAD
-              margin: 0 auto;
-              max-width: 100vw;
-              height: 100%;
-              text-align: center;
-  
-              flex-direction: column;
-              display: flex;
-              justify-content: center;
-=======
           @media screen and (max-width: 768px) {
             .abouttitle3 section {
               padding-left: 1.5rem;
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
             }
             
           }
@@ -1188,15 +1004,11 @@ h2{
 
             margin: 0 auto;
             max-width: 100vw;
-            height: 90%;
+            height: 100%;
             text-align: center;
 
             flex-direction: column;
             display: flex;
-<<<<<<< HEAD
-            height: 100vh;
-=======
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
             justify-content: center;
           }
 
@@ -1208,40 +1020,6 @@ h2{
             
             top: 0;
             left: 0;
-<<<<<<< HEAD
-            opacity: 0.3;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-          }
-
-          .emailbutton{
-            margin-top: 5rem;
-            padding-top: 5rem;
-            font-size: 2vh;
-            background-color: #849DA0;
-            color: white;
-            padding: 2vh 3vh;
-            text-decoration: none;
-            transition: all 0.5s ease;
-            }
-            
-            .emailbutton:hover{
-            background-color: #7DF9FF;
-            color: black;
-            }
-            
-            .contactcontain{
-              margin: auto;
-              display: relative;
-
-            }
-
-            .contact2{
-              padding-top: 5rem;
-
-            }
-=======
             overflow: hidden;
         }
 
@@ -1251,7 +1029,7 @@ h2{
           text-align: center;
           background: black;
           display: flex;
-          height: 90vh;
+          height: 100vh;
           justify-content: center;
           align-items: center;
         }
@@ -1273,4 +1051,29 @@ h2{
           height: 100%;
           width: 100%;
         }
->>>>>>> e2bab84a61d576a6300bf06f9f7b62a7d458a717
+
+        .emailbutton{
+          margin-top: 5rem;
+          padding-top: 5rem;
+          font-size: 2vh;
+          background-color: #849DA0;
+          color: white;
+          padding: 2vh 3vh;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          }
+          
+          .emailbutton:hover{
+          background-color: #7DF9FF;
+          color: black;
+          }
+          
+          .contactcontain{
+            margin: auto;
+            display: relative;
+
+          }
+
+          .contact2{
+            padding-top: 5rem;
+          }
