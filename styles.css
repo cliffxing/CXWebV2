@@ -255,7 +255,7 @@ white-space: nowrap;
 overflow: hidden;   
 
 font-family: "Monaco", monospace; 
-font-size: 6rem;
+font-size: 15rem;
 color: white;
 }
 
@@ -267,28 +267,55 @@ h1{
 
 /* Animation */
 h1 {
-  width: 41vw;
-  animation: typing 2.5s steps(30), blink 0.3s step-end infinite alternate;
+  
+  
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: "Monaco", monospace; 
-  font-size: 4.7vw;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
+  font-size: 5.5vw;
+  display: inline;
+  text-align: center;
+  display: inline;
+  
 }
 
 
+.center{
+  text-align: center;
+}
+
+.typewriter{
+  text-align: center;
+  display: inline-block;
+
+}
+
+
+.typewriter h1 {
+  overflow: hidden; 
+  border-right: .15em solid white;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 2px; 
+  animation: 
+    typing 3s steps(33, end),
+    blink-caret .75s steps(70, end) infinite;
+  text-align: center;
+  display: inline-block;
+}
+
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white;}
+}
 
 
 h2{
