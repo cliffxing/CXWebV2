@@ -267,7 +267,7 @@ h1{
 
 /* Animation */
 h1 {
-  width: 13ch;
+  width: 12ch;
   animation: typing 2.5s steps(30), blink 0.3s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
