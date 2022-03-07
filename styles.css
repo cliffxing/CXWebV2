@@ -273,7 +273,7 @@ h1 {
   overflow: hidden;
   border-right: 3px solid;
   font-family: "Monaco", monospace; 
-  font-size: 5.5vw;
+  font-size: 5vw;
 }
 
 @keyframes typing {
