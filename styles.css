@@ -95,7 +95,7 @@ background: #779ECB;
 transition: width 0.3s ease 0s, left 0.3s ease 0s;
 width: 0;
 }
-/**/
+
 .navbar__links:hover{
 color: #779ECB;
 }
@@ -267,49 +267,29 @@ h1{
 
 /* Animation */
 h1 {
-animation: animated-text 3s steps(29) 1s 1 normal both,
-           animated-cursor 600ms steps(29) infinite;
+  width: 13ch;
+  animation: typing 2.5s steps(30), blink 0.3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Monaco", monospace; 
+  font-size: 6rem;
 }
 
-
-/* text animation */
-
-@keyframes animated-text{
-from{width: 0;}
-to{width: 44rem;}
-}
-
-@media screen and (min-width: 2880em) {
-  
-  @keyframes animated-text{
-from{width: 0;}
-to{width: 54rem;}
-}
-
-  
-}
-
-
-
-
-}
-
-@media not all and (min-resolution:.001dpcm) { 
-@supports (-webkit-appearance:none) {
-     
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 48.2vw;}
+@keyframes typing {
+  from {
+    width: 0
   }
 }
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
-/* cursor animations */
 
-@keyframes animated-cursor{
-from{border-right-color: white;}
-to{border-right-color: transparent;}
-}
+
 
 h2{
   color: white;
