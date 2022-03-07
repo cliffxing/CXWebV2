@@ -279,7 +279,15 @@ from{width: 0;}
 to{width: 44rem;}
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 2500px) {
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 52rem;}
+  }
+  
+  }
+
+@media screen and (max-width: 2800px) {
   @keyframes animated-text{
     from{width: 0;}
     to{width: 51rem;}
@@ -287,18 +295,10 @@ to{width: 44rem;}
   
   }
 
-@media screen and (max-width: 1600px) {
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 50rem;}
-  }
-  
-  }
-
-@media screen and (max-width: 1800) {
+@media screen and (max-width: 3000) {
     @keyframes animated-text{
       from{width: 0;}
-      to{width: 44rem;}
+      to{width: 50rem;}
     }
     
     }
