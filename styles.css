@@ -279,7 +279,7 @@ from{width: 0;}
 to{width: 44rem;}
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   @keyframes animated-text{
     from{width: 0;}
     to{width: 51rem;}
