@@ -1027,7 +1027,7 @@ h2{
           .projects {
             background:black;
             opacity: 1;
-            height: 220vh;
+            height: 230vh;
             width: 100vw;
             position: relative;
             padding: 1rem;
@@ -1076,7 +1076,7 @@ h2{
                 background-color: #476985;
                 color: white;
                 padding: 1rem;
-                height: 32rem;
+                height: 34rem;
                 width: 30rem;
                 margin: auto;
                 justify-content: center;
