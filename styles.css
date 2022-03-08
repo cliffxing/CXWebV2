@@ -212,7 +212,7 @@ ul {
 
 .intro {
   margin: 0 auto;
-  max-width: 100vw;
+ 
   height: 90%;
   text-align: center;
   padding: 30px;
@@ -255,7 +255,7 @@ white-space: nowrap;
 overflow: hidden;   
 
 font-family: "Monaco", monospace; 
-font-size: 6rem;
+font-size: 15rem;
 color: white;
 }
 
@@ -267,69 +267,56 @@ h1{
 
 /* Animation */
 h1 {
-animation: animated-text 3s steps(29) 1s 1 normal both,
-           animated-cursor 600ms steps(29) infinite;
-}
-
-
-/* text animation */
-
-@keyframes animated-text{
-from{width: 0;}
-to{width: 44rem;}
-}
-
-@media screen and (max-width: 1600px) {
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 50rem;}
-  }
   
-  }
-
-@media screen and (max-width: 1800) {
-    @keyframes animated-text{
-      from{width: 0;}
-      to{width: 44rem;}
-    }
-    
-    }
-
-@media screen and (max-width: 1800) {
-      @keyframes animated-text{
-        from{width: 0;}
-        to{width: 44rem;}
-      }
-      
-      }
-
-@media screen and (max-width: 768px) {
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 13rem;}
+  
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: "Monaco", monospace; 
+  font-size: 5.5vw;
+  display: inline;
+  text-align: center;
+  display: inline;
+  
 }
 
 
+.center{
+  text-align: center;
+}
 
+.typewriter{
+  text-align: center;
+  display: inline-block;
 
 }
 
-@media not all and (min-resolution:.001dpcm) { 
-@supports (-webkit-appearance:none) {
-     
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 48.2vw;}
-  }
-}
+
+.typewriter h1 {
+  overflow: hidden; 
+  border-right: .15em solid white;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 2px; 
+  animation: 
+    typing 3s steps(33, end),
+    blink-caret .75s steps(70, end) infinite;
+  text-align: center;
+  display: inline-block;
 }
 
-/* cursor animations */
 
-@keyframes animated-cursor{
-from{border-right-color: white;}
-to{border-right-color: transparent;}
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
+
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white;}
+}
+
 
 h2{
   color: white;
@@ -1144,6 +1131,7 @@ h2{
             text-decoration: none;
             transition: all 0.5s ease;
             }
+            
             .profitrunnerappstore:hover{
             background-color: white;
             color: black;
