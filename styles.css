@@ -224,6 +224,7 @@ ul {
 
 .video-bg{
   object-fit: cover;
+  filter: brightness(25%);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -256,7 +257,7 @@ overflow: hidden;
 
 font-family: "Monaco", monospace; 
 font-size: 15rem;
-color: white;
+color: #D3D6D7;
 }
 
 @media screen and (max-width: 768px) {
@@ -273,7 +274,7 @@ h1 {
   overflow: hidden;
   border-right: 3px solid;
   font-family: "Monaco", monospace; 
-  font-size: 5.5vw;
+  font-size: 4.5vw;
   display: inline;
   text-align: center;
   display: inline;
@@ -319,7 +320,7 @@ h1 {
 
 
 h2{
-  color: white;
+  color: #D3D6D7;
   font-size: 1.8rem;
   padding-top: 9rem;
   position: absolute;
@@ -353,10 +354,9 @@ h2{
 
 
   .abouttitle{
-    margin: auto;
-    position: relative;
-    align-items: center;
-    text-align: center;
+    padding-right: 10rem;
+    text-align:  left;
+    margin-top: 13rem;
      }
 
      @media screen and (max-width: 768px) {
@@ -369,32 +369,31 @@ h2{
     }
 
   .abouttitle h4{
-  
-   margin-top: 7rem;
-   padding-top: 1rem; 
-   padding-bottom: 1.3rem;
-   font-size: 4rem;
-   text-decoration: underline;
-   font-weight: 700;
-   text-transform: uppercase;
-   background: #E1D9D1;
-   letter-spacing: 5px;
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-repeat: no-repeat;
-   background-size: 80%;
-   letter-spacing: 0.6rem;
-   position: relative;
+    padding-top: 4rem; 
+    padding-bottom: 1.3rem;
+    font-size: 4rem;
+    text-decoration: underline;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #E1D9D1;
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    letter-spacing: 0.6rem;
+    position: relative;
     }
 
     .box{
-      margin: auto;
+      
+      margin-left: auto;
+      margin-right: 2.5rem;
       height: 0.3rem;
       width: 13rem;
       background-color: #779ECB;
-      text-align: center;
-      
+      text-align: left;
     }
 
     
