@@ -334,7 +334,7 @@ h2{
   background:#040f13;
 
   opacity: 0.99;
-  height: 100vh;
+  height: 115vh;
   width: 100vw;
   position: relative;
   padding: 1rem;
@@ -343,7 +343,7 @@ h2{
 
   .skills{
     background:#040f13;
-    height: 100vh;
+    height: 170vh;
     width: 100vw;
     position: relative;
     padding: 1rem;
@@ -869,11 +869,45 @@ h2{
             
           }
 
+          .skillcard h{
+            font-size: 1.2rem;
+            letter-spacing: 0;
+        
+          }
+
+          .skillcard h8{
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            letter-spacing: 0;
+          }
 
           .gridphoto{
-            height: 7rem;
+          margin-top: 0.7rem;
+
+          margin: auto;
+            height: 5.5rem;
+            width: 5.5rem;
+          }
+
+          .gridphoto4{
+            padding-left: 0.2rem;
+            height: 5.6rem;
             width: 7rem;
           }
+
+          .stars{
+            margin-top: 1rem;
+            height: 3rem;
+            width: 9rem;
+          }
+
+          .gridphoto5{
+            padding-left: 0.2rem;
+            height: 5rem;
+            width: 8rem;
+          }
+
+
 
           @media screen and (max-width: 768px) {
             .gridphoto {
@@ -1051,6 +1085,36 @@ h2{
             
             
           }
+
+          .skillsbox{
+            padding-top: 7rem;
+            margin: auto;
+            align-items: center;
+            width: 65%;
+            display: grid;
+            gap: 4rem;
+            grid-template-columns: repeat(3, 1fr);  
+         
+          }
+
+          .skillcard{
+            font-size: 1.8rem;
+            font-weight: 700;
+            transition: 0.5s ease;
+            border-radius: 20px;
+            letter-spacing: 5px;
+            background-color: #215169;
+            color: white;
+            padding: 1rem;
+            height: 16rem;
+            width: 16rem;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            align-self: center;
+            display: grid;
+          }
+
 
           .projects {
             background:darkblue;
