@@ -63,3 +63,9 @@
     observer.observe(section)
     })
  
+
+    let popup = document.getElementById("popup1");
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }

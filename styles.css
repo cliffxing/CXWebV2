@@ -7,6 +7,9 @@
   scroll-behaviour: smooth;
   
 }
+*:focus{
+  outline: none;
+}
 
 body{
 height: 100%;
@@ -334,7 +337,7 @@ h2{
   background:#040f13;
 
   opacity: 0.99;
-  height: 115vh;
+  height: 105vh;
   width: 100vw;
   position: relative;
   padding: 1rem;
@@ -343,7 +346,7 @@ h2{
 
   .skills{
     background:#040f13;
-    height: 170vh;
+    height: 110vh;
     width: 100vw;
     position: relative;
     padding: 1rem;
@@ -383,7 +386,7 @@ h2{
     opacity: 1;
     text-align: center;
     padding-bottom: 1.3rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-decoration: underline;
     font-weight: 700;
     text-transform: uppercase;
@@ -485,11 +488,18 @@ h2{
       
     }
 
+    
+    section.is-inview .paras2{
+      visibility: visible;
+      animation: slide-in-right 1.5s;
+      
+    }
+
 
 
    
 
-    section.is-inview img{
+    section.is-inview .photo{
       visibility: visible;
       animation: slide-in-left 1.5s;
       
@@ -583,7 +593,7 @@ h2{
     .para { 
         visibility: hidden;
         color: #E1D9D1;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 0; 
         line-height: 1.3;
         text-align: left;
@@ -599,7 +609,7 @@ h2{
     .paras2 { 
      
       color: #E1D9D1;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 0; 
       line-height: 1.3;
       text-align: left;
@@ -890,8 +900,8 @@ h2{
           }
 
           .gridphoto4{
-            padding-left: 0.2rem;
-            height: 5.6rem;
+            margin: auto;
+            height: 5rem;
             width: 7rem;
           }
 
@@ -1090,9 +1100,9 @@ h2{
             padding-top: 7rem;
             margin: auto;
             align-items: center;
-            width: 65%;
+            width: 50%;
             display: grid;
-            gap: 4rem;
+            gap: 3rem;
             grid-template-columns: repeat(3, 1fr);  
          
           }
@@ -1106,8 +1116,10 @@ h2{
             background-color: #215169;
             color: white;
             padding: 1rem;
-            height: 16rem;
-            width: 16rem;
+            box-shadow: none;
+            outline: 0;
+            height: 14rem;
+            width: 14rem;
             margin: auto;
             text-align: center;
             justify-content: center;
@@ -1115,9 +1127,43 @@ h2{
             display: grid;
           }
 
+          .popup1{
+            width: 70%;
+            height: 80vh;
+            background: white;
+            border-radius: 10px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            visibility: hidden;
+            top: 0;
+            transform: translate(-50%, -50%) scale(0.1);
+            transition: transform 0.4s, top 0.4s;
+          }
+
+          .popup1 img{
+
+          }
+
+          .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(1);
+          }
+
+
+          .skillcard:focus{
+            outline: none;
+            box-shadow: none;
+          }
+
+          .skillcard:hover{
+            background-color: #779ECB;
+          }
+
 
           .projects {
-            background:darkblue;
+            background:#040f13;
             padding: 1rem;
             opacity: 1;
             height: 230vh;
@@ -1144,7 +1190,7 @@ h2{
               margin-top: 3rem;
               padding-top: 1rem; 
               padding-bottom: 1.3rem;
-              font-size: 4rem;
+              font-size: 3.5rem;
               text-decoration: underline;
               font-weight: 700;
               text-transform: uppercase;
@@ -1160,16 +1206,16 @@ h2{
                }
 
                .card {
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 font-weight: 700;
                 transition: 0.5s ease;
                 border-radius: 10px;
                 letter-spacing: 5px;
-                background-color: #476985;
+                background-color: #215169;
                 color: white;
                 padding: 1rem;
                 height: 34rem;
-                width: 32rem;
+                width: 24rem;
                 margin: auto;
                 justify-content: center;
                 align-self: center;
@@ -1179,17 +1225,16 @@ h2{
                 padding-top: 0.5rem;
               }
               .card:hover{
-                transition: 0.5s ease;
-                transform: scale(1.2);
+                background-color: #779ECB;
               }
               
               .projectcards {
-               
+                grid-template-columns: repeat(2, 1fr);  
                 padding-top: 5rem;
-                max-width: 5rem;
+                width: 60%;
                 margin: auto;
                 display: grid;
-                grid-gap: 4.5rem;
+                grid-gap: 3rem;
                 justify-content: center;
               }
 
@@ -1244,11 +1289,13 @@ h2{
             padding: 1.2vh 2vh;
             text-decoration: none;
             transition: all 0.5s ease;
+            letter-spacing: 0;
             }
             
             .profitrunnerappstore:hover{
             background-color: white;
             color: black;
+            letter-spacing: 0;
             }
             
             
@@ -1259,11 +1306,13 @@ h2{
             padding: 1.2vh 2vh;
             text-decoration: none;
             transition: all 0.5s ease;
+            letter-spacing: 0;
             }
             
             .profitrunnergooglestore:hover{
             background-color: white;
             color: black;
+            letter-spacing: 0;
             }
 
           .profitrunnerphoto{
@@ -1292,11 +1341,13 @@ h2{
             padding: 1.2vh 2vh;
             text-decoration: none;
             transition: all 0.5s ease;
+            letter-spacing: 0;
             }
 
             .equationgithub:hover{
               background-color: white;
               color: black;
+              letter-spacing: 0;
               }
 
           .playcastledefense{
@@ -1307,11 +1358,13 @@ h2{
             padding: 1.2vh 2vh;
             text-decoration: none;
             transition: all 0.5s ease;
+            letter-spacing: 0;
               }
 
               .playcastledefense:hover{
                 background-color: white;
                 color: black;
+                letter-spacing: 0;
                 }
 
           .castledefensephoto{
