@@ -344,7 +344,7 @@ h2{
 
   .skills{
     background:#040f13;
-    height: 110vh;
+    height: 140vh;
     width: 100vw;
     position: relative;
     padding: 1rem;
@@ -998,7 +998,7 @@ h2{
             padding-top: 7rem;
             margin: auto;
             align-items: center;
-            width: 50%;
+            width: 60%;
             display: grid;
             gap: 3rem;
             grid-template-columns: repeat(3, 1fr);  
@@ -1077,7 +1077,7 @@ h2{
             background:#040f13;
             padding: 1rem;
             opacity: 1;
-            height: 330vh;
+            height: 400vh;
             width: 100vw;
             position: relative;
             align-items: center;
